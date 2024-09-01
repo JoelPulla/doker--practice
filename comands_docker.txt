@@ -1,0 +1,61 @@
+# Comandos Básicos de Docker
+
+## 1. `docker --version`
+- **Descripción:** Muestra la versión instalada de Docker en tu sistema.
+
+## 2. `docker pull <nombre_imagen>`
+- **Descripción:** Descarga una imagen de Docker desde el repositorio de Docker Hub a tu máquina local.
+
+## 3. `docker images`
+- **Descripción:** Lista todas las imágenes de Docker que tienes guardadas en tu máquina.
+
+## 4. `docker run <nombre_imagen>`
+- **Descripción:** Crea y ejecuta un contenedor a partir de la imagen especificada.
+
+## 5. `docker ps`
+- **Descripción:** Muestra todos los contenedores que están corriendo en tu sistema.
+
+## 6. `docker ps -a`
+- **Descripción:** Muestra todos los contenedores, incluyendo los que están detenidos.
+
+## 7. `docker stop <id_contenedor>`
+- **Descripción:** Detiene un contenedor que está corriendo, utilizando su ID o nombre.
+
+## 8. `docker start <id_contenedor>`
+- **Descripción:** Inicia un contenedor que previamente estaba detenido.
+
+## 9. `docker rm <id_contenedor>`
+- **Descripción:** Elimina un contenedor que está detenido de tu sistema.
+
+## 10. `docker rmi <id_imagen>`
+- **Descripción:** Borra una imagen de Docker de tu máquina local.
+
+## 11. `docker exec -it <id_contenedor> <comando>`
+- **Descripción:** Ejecuta un comando dentro de un contenedor que está corriendo. Por ejemplo, `bash` para abrir una terminal.
+
+## 12. `docker build -t <nombre_imagen> <directorio>`
+- **Descripción:** Crea una imagen de Docker a partir de un Dockerfile que está en el directorio especificado.
+
+## 13. `docker logs <id_contenedor>`
+- **Descripción:** Muestra los registros (logs) de un contenedor en ejecución.
+
+## 14. `docker-compose up`
+- **Descripción:** Levanta (inicia) todos los servicios definidos en un archivo `docker-compose.yml`.
+
+## 15. `docker-compose down`
+- **Descripción:** Detiene y elimina todos los contenedores creados por `docker-compose up`.
+
+## 16. `docker network ls`
+- **Descripción:** Lista todas las redes de Docker disponibles en tu sistema.
+
+## 17. `docker volume ls`
+- **Descripción:** Muestra todos los volúmenes de Docker, que se usan para guardar datos persistentes.
+
+## 18. `docker inspect <id_contenedor>`
+- **Descripción:** Muestra información detallada sobre un contenedor específico, como su configuración y estado.
+
+## 19. `docker tag <id_imagen> <nombre_nuevo>`
+- **Descripción:** Asigna un nuevo nombre o etiqueta (tag) a una imagen existente.
+
+## 20. `docker push <nombre_imagen>`
+- **Descripción:** Sube una imagen a un repositorio, como Docker Hub.
